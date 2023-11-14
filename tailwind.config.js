@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./public/*.{html,js}', 'node_modules/preline/dist/*.js',],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+          'prsans': ['Product Sans Medium Regular', 'sans-serif'],
+        }
+
+    },
   },
   plugins: [
     require('preline/plugin')
